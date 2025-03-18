@@ -40,7 +40,7 @@ const logFormat = winston.format.printf(function(info: TransformableInfo): strin
         moment().format('YYYY-MM-DD HH:mm:ss'),
         '-',
         '[' + formatLevel(info.level.toUpperCase(), info.level) + ']',
-        formatMessage(info.message, info.level)
+        formatMessage(info.message as string, info.level)
     ];
     return logComponents.join(' ');
 });
