@@ -23,7 +23,7 @@
             {
                 "name": "NeighborBlock",
                 "type": "Multiple",
-                "count": 4,
+                "count": "4",
                 "params": [
                     {
                         "name": "Test0",
@@ -235,7 +235,7 @@
             {
                 "name": "NeighborBlock",
                 "type": "Multiple",
-                "count": 4,
+                "count": "4",
                 "params": [
                     {
                         "name": "IP",
@@ -265,7 +265,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SimAccess",
@@ -320,7 +320,7 @@
                     {
                         "name": "HostName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -431,7 +431,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SimAccess",
@@ -501,7 +501,7 @@
                     {
                         "name": "ObjectName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "TelehubPos",
@@ -568,7 +568,7 @@
             {
                 "name": "NeighborBlock",
                 "type": "Multiple",
-                "count": 4,
+                "count": "4",
                 "params": [
                     {
                         "name": "IP",
@@ -590,7 +590,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SimAccess",
@@ -796,7 +796,7 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -824,7 +824,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "EstateID",
@@ -872,7 +872,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "RegionX",
@@ -915,7 +915,7 @@
                     {
                         "name": "ErrorMessage",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "AgentID",
@@ -1081,7 +1081,7 @@
                     {
                         "name": "AbuseRegionName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "AbuseRegionID",
@@ -1091,17 +1091,17 @@
                     {
                         "name": "Summary",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Details",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "VersionString",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -1129,7 +1129,7 @@
                     {
                         "name": "HostName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "X",
@@ -1159,7 +1159,7 @@
                     {
                         "name": "Status",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -1171,7 +1171,8 @@
         "id": "23",
         "flags": [
             "Trusted",
-            "Unencoded"
+            "Unencoded",
+            "UDPDeprecated"
         ],
         "blocks": [
             {
@@ -1187,7 +1188,7 @@
                     {
                         "name": "HostName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "GridX",
@@ -1217,7 +1218,7 @@
                     {
                         "name": "Status",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -1375,7 +1376,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -1425,7 +1426,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -1470,12 +1471,12 @@
                     {
                         "name": "FirstName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "LastName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -1532,7 +1533,7 @@
                     {
                         "name": "QueryText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "QueryFlags",
@@ -1547,7 +1548,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -1605,12 +1606,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Desc",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ActualArea",
@@ -1645,7 +1646,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SnapshotID",
@@ -1705,7 +1706,7 @@
                     {
                         "name": "QueryText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "QueryFlags",
@@ -1755,7 +1756,7 @@
                     {
                         "name": "QueryText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "QueryFlags",
@@ -1820,7 +1821,7 @@
                     {
                         "name": "QueryText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "QueryFlags",
@@ -1835,7 +1836,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "QueryStart",
@@ -1880,7 +1881,7 @@
                     {
                         "name": "QueryText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "QueryFlags",
@@ -1895,7 +1896,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "EstateID",
@@ -1962,7 +1963,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ForSale",
@@ -2041,17 +2042,17 @@
                     {
                         "name": "FirstName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "LastName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Group",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Online",
@@ -2113,7 +2114,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "EventID",
@@ -2123,7 +2124,7 @@
                     {
                         "name": "Date",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "UnixTime",
@@ -2197,7 +2198,7 @@
                     {
                         "name": "GroupName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Members",
@@ -2252,7 +2253,7 @@
                     {
                         "name": "QueryText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "QueryFlags",
@@ -2307,7 +2308,7 @@
                     {
                         "name": "QueryText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "QueryFlags",
@@ -2384,7 +2385,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ClassifiedFlags",
@@ -2461,7 +2462,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -2561,12 +2562,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Desc",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "ParcelID",
@@ -2586,7 +2587,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "PosGlobal",
@@ -2596,7 +2597,7 @@
                     {
                         "name": "ParcelName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ClassifiedFlags",
@@ -2656,12 +2657,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Desc",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "ParcelID",
@@ -2964,7 +2965,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Auction",
@@ -3134,7 +3135,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Dwell",
@@ -3224,12 +3225,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Desc",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ActualArea",
@@ -3264,7 +3265,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SnapshotID",
@@ -3453,12 +3454,12 @@
                     {
                         "name": "FromName",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "Subject",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "HasAttachment",
@@ -3558,17 +3559,17 @@
                     {
                         "name": "FromAgentName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "BinaryBucket",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -3784,7 +3785,7 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -3911,7 +3912,7 @@
                     {
                         "name": "SeedCapability",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "SimAccess",
@@ -3966,7 +3967,7 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -4095,7 +4096,7 @@
                     {
                         "name": "Reason",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -4107,12 +4108,12 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ExtraParams",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -4414,7 +4415,7 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "Type",
@@ -4474,7 +4475,7 @@
                     {
                         "name": "Throttles",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -4646,7 +4647,7 @@
                     {
                         "name": "TextureEntry",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             },
@@ -4715,7 +4716,7 @@
                     {
                         "name": "TypeData",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -5394,7 +5395,7 @@
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -5751,12 +5752,62 @@
                     {
                         "name": "MediaURL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "TextureEntry",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "ObjectBypassModUpdate",
+        "frequency": "Low",
+        "id": "431",
+        "flags": [
+            "NotTrusted",
+            "Zerocoded"
+        ],
+        "blocks": [
+            {
+                "name": "AgentData",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "AgentID",
+                        "type": "LLUUID",
+                        "size": 1
+                    },
+                    {
+                        "name": "SessionID",
+                        "type": "LLUUID",
+                        "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "ObjectData",
+                "type": "Variable",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "ObjectLocalID",
+                        "type": "U32",
+                        "size": 1
+                    },
+                    {
+                        "name": "PropertyID",
+                        "type": "U8",
+                        "size": 1
+                    },
+                    {
+                        "name": "Value",
+                        "type": "Variable",
+                        "size": "2"
                     }
                 ]
             }
@@ -5991,7 +6042,7 @@
                     {
                         "name": "ParamData",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -6398,7 +6449,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -6443,7 +6494,7 @@
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -7394,7 +7445,7 @@
                     {
                         "name": "Filename",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -7636,17 +7687,17 @@
                     {
                         "name": "SysOS",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SysCPU",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SysGPU",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -7675,7 +7726,7 @@
             {
                 "name": "NetStats",
                 "type": "Multiple",
-                "count": 2,
+                "count": "2",
                 "params": [
                     {
                         "name": "Bytes",
@@ -7874,7 +7925,7 @@
                     {
                         "name": "AbuseRegionName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "AbuseRegionID",
@@ -7884,17 +7935,17 @@
                     {
                         "name": "Summary",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Details",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "VersionString",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -7917,7 +7968,7 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -7929,11 +7980,23 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ExtraParams",
                         "type": "Variable",
+                        "size": "1"
+                    }
+                ]
+            },
+            {
+                "name": "AgentInfo",
+                "type": "Variable",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "AgentID",
+                        "type": "LLUUID",
                         "size": 1
                     }
                 ]
@@ -7974,7 +8037,7 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -8086,7 +8149,7 @@
                     {
                         "name": "FromName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SourceID",
@@ -8121,7 +8184,7 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -8268,7 +8331,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "EstateID",
@@ -8355,12 +8418,12 @@
                     {
                         "name": "ProductSKU",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ProductName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MaxAgents32",
@@ -8432,6 +8495,43 @@
                         "size": 1
                     }
                 ]
+            },
+            {
+                "name": "CombatSettings",
+                "type": "Variable",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "CombatFlags",
+                        "type": "U32",
+                        "size": 1
+                    },
+                    {
+                        "name": "OnDeath",
+                        "type": "U8",
+                        "size": 1
+                    },
+                    {
+                        "name": "DamageThrottle",
+                        "type": "F32",
+                        "size": 1
+                    },
+                    {
+                        "name": "RegenerationRate",
+                        "type": "F32",
+                        "size": 1
+                    },
+                    {
+                        "name": "InvulnerabilyTime",
+                        "type": "F32",
+                        "size": 1
+                    },
+                    {
+                        "name": "DamageLimit",
+                        "type": "F32",
+                        "size": 1
+                    }
+                ]
             }
         ]
     },
@@ -8469,7 +8569,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "EstateID",
@@ -8641,7 +8741,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SimOwner",
@@ -8780,17 +8880,17 @@
                     {
                         "name": "ColoName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ProductSKU",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ProductName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -8959,7 +9059,7 @@
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -8999,7 +9099,7 @@
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -9034,7 +9134,7 @@
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -9114,7 +9214,7 @@
                     {
                         "name": "ObjectData",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ParentID",
@@ -9219,47 +9319,47 @@
                     {
                         "name": "TextureEntry",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "TextureAnim",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "NameValue",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "Text",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "TextColor",
                         "type": "Fixed",
-                        "size": 4
+                        "size": "4"
                     },
                     {
                         "name": "MediaURL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "PSBlock",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ExtraParams",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Sound",
@@ -9344,7 +9444,7 @@
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -9434,12 +9534,12 @@
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "TextureEntry",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -9518,7 +9618,7 @@
                     {
                         "name": "SeedCapability",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             },
@@ -9698,7 +9798,7 @@
                     {
                         "name": "Params",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -9746,7 +9846,7 @@
                     {
                         "name": "Params",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -9789,7 +9889,7 @@
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -9845,7 +9945,7 @@
                     {
                         "name": "Filename",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "FilePath",
@@ -9910,7 +10010,7 @@
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -10030,7 +10130,7 @@
                     {
                         "name": "TypeData",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -10070,7 +10170,7 @@
                     {
                         "name": "TextureEntry",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             },
@@ -10116,6 +10216,23 @@
                     {
                         "name": "HoverHeight",
                         "type": "LLVector3",
+                        "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "AttachmentBlock",
+                "type": "Variable",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "ID",
+                        "type": "LLUUID",
+                        "size": 1
+                    },
+                    {
+                        "name": "AttachmentPoint",
+                        "type": "U8",
                         "size": 1
                     }
                 ]
@@ -10395,27 +10512,27 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "TouchName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SitName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "TextureID",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -10508,12 +10625,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -10626,7 +10743,7 @@
                     {
                         "name": "Reason",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -10697,7 +10814,7 @@
                     {
                         "name": "Reason",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -10936,27 +11053,27 @@
                     {
                         "name": "AboutText",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "FLAboutText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "BornOn",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ProfileURL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CharterMember",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Flags",
@@ -11006,7 +11123,7 @@
                     {
                         "name": "WantToText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SkillsMask",
@@ -11016,12 +11133,12 @@
                     {
                         "name": "SkillsText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "LanguagesText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -11071,7 +11188,7 @@
                     {
                         "name": "GroupTitle",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "GroupID",
@@ -11081,7 +11198,7 @@
                     {
                         "name": "GroupName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "GroupInsigniaID",
@@ -11148,12 +11265,12 @@
                     {
                         "name": "AboutText",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "FLAboutText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "AllowPublish",
@@ -11168,7 +11285,7 @@
                     {
                         "name": "ProfileURL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -11213,7 +11330,7 @@
                     {
                         "name": "WantToText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SkillsMask",
@@ -11223,12 +11340,12 @@
                     {
                         "name": "SkillsText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "LanguagesText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -11268,7 +11385,7 @@
                     {
                         "name": "Notes",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -11313,7 +11430,7 @@
                     {
                         "name": "Notes",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -11358,7 +11475,7 @@
                     {
                         "name": "PickName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -11438,27 +11555,27 @@
                     {
                         "name": "Creator",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Category",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Desc",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "Date",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "DateUTC",
@@ -11483,7 +11600,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "GlobalPos",
@@ -11630,7 +11747,7 @@
                     {
                         "name": "QueryText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "QueryFlags",
@@ -11695,12 +11812,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Desc",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "SnapshotID",
@@ -11710,17 +11827,17 @@
                     {
                         "name": "User",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "OriginalName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "PosGlobal",
@@ -11795,12 +11912,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Desc",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "SnapshotID",
@@ -11938,12 +12055,12 @@
                     {
                         "name": "ObjectName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ObjectOwner",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Questions",
@@ -12021,22 +12138,22 @@
                     {
                         "name": "FirstName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "LastName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ObjectName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "ChatChannel",
@@ -12058,7 +12175,7 @@
                     {
                         "name": "ButtonLabel",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -12125,7 +12242,7 @@
                     {
                         "name": "ButtonLabel",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -12221,7 +12338,7 @@
                     {
                         "name": "ObjectName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ObjectID",
@@ -12241,12 +12358,12 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "URL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -12269,12 +12386,12 @@
                     {
                         "name": "ObjectName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SimPosition",
@@ -12284,6 +12401,18 @@
                     {
                         "name": "LookAt",
                         "type": "LLVector3",
+                        "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "Options",
+                "type": "Variable",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "Flags",
+                        "type": "U32",
                         "size": 1
                     }
                 ]
@@ -12312,7 +12441,7 @@
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -12434,7 +12563,8 @@
         "id": "23",
         "flags": [
             "Trusted",
-            "Zerocoded"
+            "Zerocoded",
+            "UDPDeprecated"
         ],
         "blocks": [
             {
@@ -12520,7 +12650,7 @@
                     {
                         "name": "Bitmap",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "Area",
@@ -12595,22 +12725,22 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Desc",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MusicURL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MediaURL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MediaID",
@@ -12786,22 +12916,22 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Desc",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MusicURL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MediaURL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MediaID",
@@ -13157,7 +13287,7 @@
                     {
                         "name": "EstateName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "EstateOwnerID",
@@ -14096,17 +14226,17 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MusicURL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "RegionX",
@@ -14482,7 +14612,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -14658,12 +14788,12 @@
                     {
                         "name": "FirstName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "LastName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -14714,7 +14844,7 @@
                     {
                         "name": "GroupName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -14757,7 +14887,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "SourceType",
@@ -14782,7 +14912,7 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -14815,7 +14945,7 @@
                     {
                         "name": "LayerData",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -14843,6 +14973,18 @@
                     {
                         "name": "CanAcceptTasks",
                         "type": "BOOL",
+                        "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "SimFlags",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "Flags",
+                        "type": "U64",
                         "size": 1
                     }
                 ]
@@ -14936,7 +15078,7 @@
                     {
                         "name": "Throttles",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "LocomotionState",
@@ -14986,7 +15128,7 @@
                     {
                         "name": "AgentTextures",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "ActiveGroupID",
@@ -15054,7 +15196,7 @@
                     {
                         "name": "NVPairs",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             },
@@ -15096,6 +15238,18 @@
                         "name": "Flags",
                         "type": "U32",
                         "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "AgentInventoryHost",
+                "type": "Variable",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "InventoryHost",
+                        "type": "Variable",
+                        "size": "1"
                     }
                 ]
             }
@@ -15523,7 +15677,7 @@
                     {
                         "name": "SearchName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Type",
@@ -15613,7 +15767,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Type",
@@ -15723,7 +15877,7 @@
                     {
                         "name": "ChannelVersion",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -15914,17 +16068,41 @@
                     {
                         "name": "FromAgentName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "BinaryBucket",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
+                    }
+                ]
+            },
+            {
+                "name": "EstateBlock",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "EstateID",
+                        "type": "U32",
+                        "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "MetaData",
+                "type": "Variable",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "Data",
+                        "type": "Variable",
+                        "size": "2"
                     }
                 ]
             }
@@ -16137,7 +16315,7 @@
                     {
                         "name": "Method",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Invoice",
@@ -16154,7 +16332,7 @@
                     {
                         "name": "Parameter",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -16199,7 +16377,7 @@
                     {
                         "name": "Method",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Invoice",
@@ -16216,7 +16394,7 @@
                     {
                         "name": "Parameter",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -16261,7 +16439,7 @@
                     {
                         "name": "Method",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Invoice",
@@ -16278,7 +16456,7 @@
                     {
                         "name": "Parameter",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -16313,7 +16491,7 @@
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -16359,7 +16537,7 @@
                     {
                         "name": "Method",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Invoice",
@@ -16376,7 +16554,7 @@
                     {
                         "name": "Parameter",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -16461,7 +16639,7 @@
                     {
                         "name": "MuteName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MuteType",
@@ -16516,7 +16694,7 @@
                     {
                         "name": "MuteName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -16714,12 +16892,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CreationDate",
@@ -16864,12 +17042,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CreationDate",
@@ -16934,7 +17112,7 @@
                     {
                         "name": "NewName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -16994,7 +17172,7 @@
                     {
                         "name": "NewName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -17174,7 +17352,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -17229,7 +17407,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -17449,7 +17627,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -17546,12 +17724,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CreationDate",
@@ -17726,12 +17904,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CreationDate",
@@ -17796,7 +17974,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -17898,12 +18076,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CreationDate",
@@ -18218,12 +18396,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CreationDate",
@@ -18401,7 +18579,7 @@
                     {
                         "name": "Filename",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -18703,12 +18881,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CreationDate",
@@ -18897,6 +19075,23 @@
                     {
                         "name": "Type",
                         "type": "S8",
+                        "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "ValidationBlock",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "NeedsValidation",
+                        "type": "BOOL",
+                        "size": 1
+                    },
+                    {
+                        "name": "EstateID",
+                        "type": "U32",
                         "size": 1
                     }
                 ]
@@ -19369,12 +19564,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CreationDate",
@@ -19459,12 +19654,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -19521,7 +19716,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -19727,7 +19922,7 @@
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -19810,7 +20005,7 @@
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -19903,7 +20098,7 @@
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -19945,7 +20140,7 @@
                     {
                         "name": "ItemDescription",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -19957,7 +20152,8 @@
         "id": "315",
         "flags": [
             "Trusted",
-            "Zerocoded"
+            "Zerocoded",
+            "UDPDeprecated"
         ],
         "blocks": [
             {
@@ -20015,7 +20211,7 @@
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -20057,7 +20253,7 @@
                     {
                         "name": "ItemDescription",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -20190,7 +20386,7 @@
                     {
                         "name": "Filename",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -20384,7 +20580,7 @@
                     {
                         "name": "SimName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "LocationID",
@@ -20568,7 +20764,7 @@
                     {
                         "name": "NVPair",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -20603,7 +20799,7 @@
                     {
                         "name": "NVPair",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -20757,12 +20953,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CreationDate",
@@ -21057,7 +21253,7 @@
                     {
                         "name": "AssetData",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -21118,12 +21314,12 @@
                     {
                         "name": "FromAddress",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Subject",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -21161,22 +21357,22 @@
                     {
                         "name": "FromAddress",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Subject",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "MailFilter",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -21199,7 +21395,7 @@
                     {
                         "name": "From",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "To",
@@ -21209,12 +21405,12 @@
                     {
                         "name": "Subject",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Body",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -21247,7 +21443,7 @@
                     {
                         "name": "Request",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -21275,7 +21471,7 @@
                     {
                         "name": "Reply",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -21315,12 +21511,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Charter",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "ShowInList",
@@ -21395,7 +21591,7 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -21440,7 +21636,7 @@
                     {
                         "name": "Charter",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "ShowInList",
@@ -21887,6 +22083,18 @@
                         "size": 1
                     }
                 ]
+            },
+            {
+                "name": "GroupData",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "GroupLimit",
+                        "type": "S32",
+                        "size": 1
+                    }
+                ]
             }
         ]
     },
@@ -21964,12 +22172,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Charter",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "ShowInList",
@@ -21979,7 +22187,7 @@
                     {
                         "name": "MemberTitle",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "PowersMask",
@@ -22144,7 +22352,7 @@
                     {
                         "name": "StartDate",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Balance",
@@ -22219,12 +22427,12 @@
                     {
                         "name": "LastTaxDate",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "TaxDate",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -22334,7 +22542,7 @@
                     {
                         "name": "StartDate",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -22346,7 +22554,7 @@
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Amount",
@@ -22461,7 +22669,7 @@
                     {
                         "name": "StartDate",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             },
@@ -22473,12 +22681,12 @@
                     {
                         "name": "Time",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "User",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Type",
@@ -22488,7 +22696,7 @@
                     {
                         "name": "Item",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Amount",
@@ -22612,17 +22820,17 @@
                     {
                         "name": "TerseDateID",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "StartDateTime",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "EndDateTime",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "AlreadyVoted",
@@ -22632,7 +22840,7 @@
                     {
                         "name": "VoteCast",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Majority",
@@ -22647,7 +22855,7 @@
                     {
                         "name": "ProposalText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -22761,17 +22969,17 @@
                     {
                         "name": "TerseDateID",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "StartDateTime",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "EndDateTime",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "VoteInitiator",
@@ -22781,12 +22989,12 @@
                     {
                         "name": "VoteType",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "VoteResult",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Majority",
@@ -22801,7 +23009,7 @@
                     {
                         "name": "ProposalText",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             },
@@ -22818,7 +23026,7 @@
                     {
                         "name": "VoteCast",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "NumVotes",
@@ -22884,7 +23092,7 @@
                     {
                         "name": "ProposalText",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -22935,7 +23143,7 @@
                     {
                         "name": "VoteCast",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -23057,7 +23265,7 @@
                     {
                         "name": "OnlineStatus",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "AgentPowers",
@@ -23067,7 +23275,7 @@
                     {
                         "name": "Title",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "IsOwner",
@@ -23314,17 +23522,17 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Title",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Powers",
@@ -23517,7 +23725,7 @@
                     {
                         "name": "Title",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "RoleID",
@@ -23615,17 +23823,17 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Title",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Powers",
@@ -23696,7 +23904,7 @@
                     {
                         "name": "Selection",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -23929,7 +24137,7 @@
                     {
                         "name": "HostName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -23985,17 +24193,17 @@
                     {
                         "name": "FirstName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "LastName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "GroupTitle",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ActiveGroupID",
@@ -24010,7 +24218,7 @@
                     {
                         "name": "GroupName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -24048,7 +24256,7 @@
                     {
                         "name": "GroupTitle",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -24109,7 +24317,7 @@
                     {
                         "name": "GroupName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -24186,7 +24394,7 @@
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -24246,12 +24454,12 @@
                     {
                         "name": "Color",
                         "type": "Fixed",
-                        "size": 4
+                        "size": "4"
                     },
                     {
                         "name": "TypeData",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -24279,7 +24487,7 @@
                     {
                         "name": "Digest",
                         "type": "Fixed",
-                        "size": 32
+                        "size": "32"
                     }
                 ]
             }
@@ -24387,12 +24595,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -24489,12 +24697,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -24647,12 +24855,12 @@
                     {
                         "name": "DirectoryVisibility",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "EMail",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -24697,7 +24905,7 @@
                     {
                         "name": "DirectoryVisibility",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -24725,7 +24933,7 @@
                     {
                         "name": "NewName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -24760,12 +24968,12 @@
                     {
                         "name": "SimFilename",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ViewerFilename",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -24788,7 +24996,7 @@
                     {
                         "name": "Method",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Invoice",
@@ -24798,7 +25006,7 @@
                     {
                         "name": "Digest",
                         "type": "Fixed",
-                        "size": 32
+                        "size": "32"
                     }
                 ]
             },
@@ -24810,7 +25018,7 @@
                     {
                         "name": "Parameter",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -25038,7 +25246,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -25088,7 +25296,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Access",
@@ -25250,7 +25458,7 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -25293,27 +25501,27 @@
                     {
                         "name": "To",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "From",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Subject",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Msg",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "AllowPublish",
@@ -25454,7 +25662,7 @@
                     {
                         "name": "StringValue",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -25508,7 +25716,7 @@
                     {
                         "name": "StringValue",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -25551,7 +25759,7 @@
                     {
                         "name": "StringValue",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -25574,7 +25782,7 @@
                     {
                         "name": "TargetIP",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "TargetPort",
@@ -25645,7 +25853,7 @@
                     {
                         "name": "MediaURL",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MediaID",
@@ -25667,12 +25875,12 @@
                     {
                         "name": "MediaType",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MediaDesc",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "MediaWidth",
@@ -25737,7 +25945,7 @@
                     {
                         "name": "Filter",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ParcelLocalID",
@@ -25818,12 +26026,12 @@
                     {
                         "name": "TaskName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "OwnerName",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     }
                 ]
             }
@@ -25863,7 +26071,7 @@
                     {
                         "name": "Token",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "ID",
@@ -25873,17 +26081,17 @@
                     {
                         "name": "System",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Message",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     },
                     {
                         "name": "Data",
                         "type": "Variable",
-                        "size": 2
+                        "size": "2"
                     }
                 ]
             }
@@ -26054,12 +26262,12 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "CreationDate",
@@ -26139,12 +26347,227 @@
                     {
                         "name": "Name",
                         "type": "Variable",
-                        "size": 1
+                        "size": "1"
                     },
                     {
                         "name": "Description",
                         "type": "Variable",
+                        "size": "1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "RetrieveIMsExtended",
+        "frequency": "Low",
+        "id": "427",
+        "flags": [
+            "Trusted",
+            "Unencoded"
+        ],
+        "blocks": [
+            {
+                "name": "AgentData",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "AgentID",
+                        "type": "LLUUID",
                         "size": 1
+                    },
+                    {
+                        "name": "SessionID",
+                        "type": "LLUUID",
+                        "size": 1
+                    },
+                    {
+                        "name": "IsPremium",
+                        "type": "BOOL",
+                        "size": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "JoinGroupRequestExtended",
+        "frequency": "Low",
+        "id": "428",
+        "flags": [
+            "Trusted",
+            "Unencoded"
+        ],
+        "blocks": [
+            {
+                "name": "AgentData",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "AgentID",
+                        "type": "LLUUID",
+                        "size": 1
+                    },
+                    {
+                        "name": "SessionID",
+                        "type": "LLUUID",
+                        "size": 1
+                    },
+                    {
+                        "name": "GroupLimit",
+                        "type": "S32",
+                        "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "GroupData",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "GroupID",
+                        "type": "LLUUID",
+                        "size": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "CreateGroupRequestExtended",
+        "frequency": "Low",
+        "id": "429",
+        "flags": [
+            "Trusted",
+            "Unencoded"
+        ],
+        "blocks": [
+            {
+                "name": "AgentData",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "AgentID",
+                        "type": "LLUUID",
+                        "size": 1
+                    },
+                    {
+                        "name": "SessionID",
+                        "type": "LLUUID",
+                        "size": 1
+                    },
+                    {
+                        "name": "GroupLimit",
+                        "type": "S32",
+                        "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "GroupData",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "Name",
+                        "type": "Variable",
+                        "size": "1"
+                    },
+                    {
+                        "name": "Charter",
+                        "type": "Variable",
+                        "size": "2"
+                    },
+                    {
+                        "name": "ShowInList",
+                        "type": "BOOL",
+                        "size": 1
+                    },
+                    {
+                        "name": "InsigniaID",
+                        "type": "LLUUID",
+                        "size": 1
+                    },
+                    {
+                        "name": "MembershipFee",
+                        "type": "S32",
+                        "size": 1
+                    },
+                    {
+                        "name": "OpenEnrollment",
+                        "type": "BOOL",
+                        "size": 1
+                    },
+                    {
+                        "name": "AllowPublish",
+                        "type": "BOOL",
+                        "size": 1
+                    },
+                    {
+                        "name": "MaturePublish",
+                        "type": "BOOL",
+                        "size": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "GameControlInput",
+        "frequency": "High",
+        "id": "32",
+        "flags": [
+            "NotTrusted",
+            "Zerocoded"
+        ],
+        "blocks": [
+            {
+                "name": "AgentData",
+                "type": "Single",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "AgentID",
+                        "type": "LLUUID",
+                        "size": 1
+                    },
+                    {
+                        "name": "SessionID",
+                        "type": "LLUUID",
+                        "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "AxisData",
+                "type": "Variable",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "Index",
+                        "type": "U8",
+                        "size": 1
+                    },
+                    {
+                        "name": "Value",
+                        "type": "S16",
+                        "size": 1
+                    }
+                ]
+            },
+            {
+                "name": "ButtonData",
+                "type": "Variable",
+                "count": 1,
+                "params": [
+                    {
+                        "name": "Data",
+                        "type": "Variable",
+                        "size": "1"
                     }
                 ]
             }

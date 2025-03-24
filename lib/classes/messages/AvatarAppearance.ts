@@ -30,10 +30,14 @@ export class AvatarAppearanceMessage implements MessageBase
     AppearanceHover: {
         HoverHeight: Vector3;
     }[];
+    AttachmentBlock: {
+        ID: UUID;
+        AttachmentPoint: number;
+    }[];
 
     getSize(): number
     {
-        return (this.ObjectData['TextureEntry'].length + 2) + ((1) * this.VisualParam.length) + ((9) * this.AppearanceData.length) + ((12) * this.AppearanceHover.length) + 20;
+        return (this.ObjectData['TextureEntry'].length + 2) + ((1) * this.VisualParam.length) + ((9) * this.AppearanceData.length) + ((12) * this.AppearanceHover.length) + ((17) * this.AttachmentBlock.length) + 21;
     }
 
     // @ts-ignore
@@ -69,6 +73,14 @@ export class AvatarAppearanceMessage implements MessageBase
         {
             this.AppearanceHover[i]['HoverHeight'].writeToBuffer(buf, pos, false);
             pos += 12;
+        }
+        count = this.AttachmentBlock.length;
+        buf.writeUInt8(this.AttachmentBlock.length, pos++);
+        for (let i = 0; i < count; i++)
+        {
+            this.AttachmentBlock[i]['ID'].writeToBuffer(buf, pos);
+            pos += 16;
+            buf.writeUInt8(this.AttachmentBlock[i]['AttachmentPoint'], pos++);
         }
         return pos - startPos;
     }
@@ -155,6 +167,26 @@ export class AvatarAppearanceMessage implements MessageBase
             newObjAppearanceHover['HoverHeight'] = new Vector3(buf, pos, false);
             pos += 12;
             this.AppearanceHover.push(newObjAppearanceHover);
+        }
+        if (pos >= buf.length)
+        {
+            return pos - startPos;
+        }
+        count = buf.readUInt8(pos++);
+        this.AttachmentBlock = [];
+        for (let i = 0; i < count; i++)
+        {
+            const newObjAttachmentBlock: {
+                ID: UUID,
+                AttachmentPoint: number
+            } = {
+                ID: UUID.zero(),
+                AttachmentPoint: 0
+            };
+            newObjAttachmentBlock['ID'] = new UUID(buf, pos);
+            pos += 16;
+            newObjAttachmentBlock['AttachmentPoint'] = buf.readUInt8(pos++);
+            this.AttachmentBlock.push(newObjAttachmentBlock);
         }
         return pos - startPos;
     }

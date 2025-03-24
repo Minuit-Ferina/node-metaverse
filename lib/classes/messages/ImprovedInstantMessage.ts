@@ -33,10 +33,23 @@ export class ImprovedInstantMessageMessage implements MessageBase
     EstateBlock: {
         EstateID: number;
     };
+    MetaData: {
+        Data: Buffer;
+    }[];
 
     getSize(): number
     {
-        return (this.MessageBlock['FromAgentName'].length + 1 + this.MessageBlock['Message'].length + 2 + this.MessageBlock['BinaryBucket'].length + 2) + 107;
+        return (this.MessageBlock['FromAgentName'].length + 1 + this.MessageBlock['Message'].length + 2 + this.MessageBlock['BinaryBucket'].length + 2) + this.calculateVarVarSize(this.MetaData, 'Data', 2) + 108;
+    }
+
+    calculateVarVarSize(block: { [key: string]: any }[], paramName: string, extraPerVar: number): number
+    {
+        let size = 0;
+        for (const bl of block)
+        {
+            size += bl[paramName].length + extraPerVar;
+        }
+        return size;
     }
 
     // @ts-ignore
@@ -75,6 +88,15 @@ export class ImprovedInstantMessageMessage implements MessageBase
         pos += this.MessageBlock['BinaryBucket'].length;
         buf.writeUInt32LE(this.EstateBlock['EstateID'], pos);
         pos += 4;
+        const count = this.MetaData.length;
+        buf.writeUInt8(this.MetaData.length, pos++);
+        for (let i = 0; i < count; i++)
+        {
+            buf.writeUInt16LE(this.MetaData[i]['Data'].length, pos);
+            pos += 2;
+            this.MetaData[i]['Data'].copy(buf, pos);
+            pos += this.MetaData[i]['Data'].length;
+        }
         return pos - startPos;
     }
 
@@ -157,6 +179,26 @@ export class ImprovedInstantMessageMessage implements MessageBase
         newObjEstateBlock['EstateID'] = buf.readUInt32LE(pos);
         pos += 4;
         this.EstateBlock = newObjEstateBlock;
+        if (pos >= buf.length)
+        {
+            return pos - startPos;
+        }
+        const count = buf.readUInt8(pos++);
+        this.MetaData = [];
+        for (let i = 0; i < count; i++)
+        {
+            const newObjMetaData: {
+                Data: Buffer
+            } = {
+                Data: Buffer.allocUnsafe(0)
+            };
+            varLength = buf.readUInt16LE(pos);
+            pos += 2;
+            newObjMetaData['Data'] = buf.slice(pos, pos + varLength);
+            pos += varLength;
+            this.MetaData.push(newObjMetaData);
+        }
         return pos - startPos;
     }
 }
+

@@ -18,10 +18,13 @@ export class InviteGroupResponseMessage implements MessageBase
         RoleID: UUID;
         MembershipFee: number;
     };
+    GroupData: {
+        GroupLimit: number;
+    };
 
     getSize(): number
     {
-        return 68;
+        return 72;
     }
 
     // @ts-ignore
@@ -37,6 +40,8 @@ export class InviteGroupResponseMessage implements MessageBase
         this.InviteData['RoleID'].writeToBuffer(buf, pos);
         pos += 16;
         buf.writeInt32LE(this.InviteData['MembershipFee'], pos);
+        pos += 4;
+        buf.writeInt32LE(this.GroupData['GroupLimit'], pos);
         pos += 4;
         return pos - startPos;
     }
@@ -69,6 +74,14 @@ export class InviteGroupResponseMessage implements MessageBase
         newObjInviteData['MembershipFee'] = buf.readInt32LE(pos);
         pos += 4;
         this.InviteData = newObjInviteData;
+        const newObjGroupData: {
+            GroupLimit: number
+        } = {
+            GroupLimit: 0
+        };
+        newObjGroupData['GroupLimit'] = buf.readInt32LE(pos);
+        pos += 4;
+        this.GroupData = newObjGroupData;
         return pos - startPos;
     }
 }

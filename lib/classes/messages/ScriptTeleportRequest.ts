@@ -17,10 +17,13 @@ export class ScriptTeleportRequestMessage implements MessageBase
         SimPosition: Vector3;
         LookAt: Vector3;
     };
+    Options: {
+        Flags: number;
+    }[];
 
     getSize(): number
     {
-        return (this.Data['ObjectName'].length + 1 + this.Data['SimName'].length + 1) + 24;
+        return (this.Data['ObjectName'].length + 1 + this.Data['SimName'].length + 1) + ((4) * this.Options.length) + 25;
     }
 
     // @ts-ignore
@@ -37,6 +40,13 @@ export class ScriptTeleportRequestMessage implements MessageBase
         pos += 12;
         this.Data['LookAt'].writeToBuffer(buf, pos, false);
         pos += 12;
+        const count = this.Options.length;
+        buf.writeUInt8(this.Options.length, pos++);
+        for (let i = 0; i < count; i++)
+        {
+            buf.writeUInt32LE(this.Options[i]['Flags'], pos);
+            pos += 4;
+        }
         return pos - startPos;
     }
 
@@ -67,6 +77,23 @@ export class ScriptTeleportRequestMessage implements MessageBase
         newObjData['LookAt'] = new Vector3(buf, pos, false);
         pos += 12;
         this.Data = newObjData;
+        if (pos >= buf.length)
+        {
+            return pos - startPos;
+        }
+        const count = buf.readUInt8(pos++);
+        this.Options = [];
+        for (let i = 0; i < count; i++)
+        {
+            const newObjOptions: {
+                Flags: number
+            } = {
+                Flags: 0
+            };
+            newObjOptions['Flags'] = buf.readUInt32LE(pos);
+            pos += 4;
+            this.Options.push(newObjOptions);
+        }
         return pos - startPos;
     }
 }

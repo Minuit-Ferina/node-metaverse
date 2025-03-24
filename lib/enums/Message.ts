@@ -111,6 +111,7 @@ export enum Message
     ObjectFlagUpdate = 4294901854,
     ObjectClickAction = 4294901855,
     ObjectImage = 4294901856,
+    ObjectBypassModUpdate = 4294902191,
     ObjectMaterial = 4294901857,
     ObjectShape = 4294901858,
     ObjectExtraParams = 4294901859,
@@ -477,5 +478,9 @@ export enum Message
     Error = 4294902183,
     ObjectIncludeInSearch = 4294902184,
     RezRestoreToWorld = 4294902185,
-    LinkInventoryItem = 4294902186
+    LinkInventoryItem = 4294902186,
+    RetrieveIMsExtended = 4294902187,
+    JoinGroupRequestExtended = 4294902188,
+    CreateGroupRequestExtended = 4294902189,
+    GameControlInput = 32
 }

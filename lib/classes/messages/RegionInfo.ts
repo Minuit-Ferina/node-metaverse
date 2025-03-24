@@ -53,10 +53,18 @@ export class RegionInfoMessage implements MessageBase
         ChatShoutOffset: number;
         ChatFlags: number;
     }[];
+    CombatSettings: {
+        CombatFlags: number;
+        OnDeath: number;
+        DamageThrottle: number;
+        RegenerationRate: number;
+        InvulnerabilyTime: number;
+        DamageLimit: number;
+    }[];
 
     getSize(): number
     {
-        return (this.RegionInfo['SimName'].length + 1) + (this.RegionInfo2['ProductSKU'].length + 1 + this.RegionInfo2['ProductName'].length + 1) + ((8) * this.RegionInfo3.length) + ((28) * this.RegionInfo5.length) + 97;
+        return (this.RegionInfo['SimName'].length + 1) + (this.RegionInfo2['ProductSKU'].length + 1 + this.RegionInfo2['ProductName'].length + 1) + ((8) * this.RegionInfo3.length) + ((28) * this.RegionInfo5.length) + ((21) * this.CombatSettings.length) + 98;
     }
 
     // @ts-ignore
@@ -135,6 +143,22 @@ export class RegionInfoMessage implements MessageBase
             buf.writeFloatLE(this.RegionInfo5[i]['ChatShoutOffset'], pos);
             pos += 4;
             buf.writeUInt32LE(this.RegionInfo5[i]['ChatFlags'], pos);
+            pos += 4;
+        }
+        count = this.CombatSettings.length;
+        buf.writeUInt8(this.CombatSettings.length, pos++);
+        for (let i = 0; i < count; i++)
+        {
+            buf.writeUInt32LE(this.CombatSettings[i]['CombatFlags'], pos);
+            pos += 4;
+            buf.writeUInt8(this.CombatSettings[i]['OnDeath'], pos++);
+            buf.writeFloatLE(this.CombatSettings[i]['DamageThrottle'], pos);
+            pos += 4;
+            buf.writeFloatLE(this.CombatSettings[i]['RegenerationRate'], pos);
+            pos += 4;
+            buf.writeFloatLE(this.CombatSettings[i]['InvulnerabilyTime'], pos);
+            pos += 4;
+            buf.writeFloatLE(this.CombatSettings[i]['DamageLimit'], pos);
             pos += 4;
         }
         return pos - startPos;
@@ -306,6 +330,42 @@ export class RegionInfoMessage implements MessageBase
             newObjRegionInfo5['ChatFlags'] = buf.readUInt32LE(pos);
             pos += 4;
             this.RegionInfo5.push(newObjRegionInfo5);
+        }
+        if (pos >= buf.length)
+        {
+            return pos - startPos;
+        }
+        count = buf.readUInt8(pos++);
+        this.CombatSettings = [];
+        for (let i = 0; i < count; i++)
+        {
+            const newObjCombatSettings: {
+                CombatFlags: number,
+                OnDeath: number,
+                DamageThrottle: number,
+                RegenerationRate: number,
+                InvulnerabilyTime: number,
+                DamageLimit: number
+            } = {
+                CombatFlags: 0,
+                OnDeath: 0,
+                DamageThrottle: 0,
+                RegenerationRate: 0,
+                InvulnerabilyTime: 0,
+                DamageLimit: 0
+            };
+            newObjCombatSettings['CombatFlags'] = buf.readUInt32LE(pos);
+            pos += 4;
+            newObjCombatSettings['OnDeath'] = buf.readUInt8(pos++);
+            newObjCombatSettings['DamageThrottle'] = buf.readFloatLE(pos);
+            pos += 4;
+            newObjCombatSettings['RegenerationRate'] = buf.readFloatLE(pos);
+            pos += 4;
+            newObjCombatSettings['InvulnerabilyTime'] = buf.readFloatLE(pos);
+            pos += 4;
+            newObjCombatSettings['DamageLimit'] = buf.readFloatLE(pos);
+            pos += 4;
+            this.CombatSettings.push(newObjCombatSettings);
         }
         return pos - startPos;
     }
